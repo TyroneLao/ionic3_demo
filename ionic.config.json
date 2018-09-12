@@ -1,0 +1,7 @@
+{
+  "name": "gdams",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
