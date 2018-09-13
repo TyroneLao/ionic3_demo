@@ -4,4 +4,6 @@
 
 ### 解决相关问题
 1. 解决support-v4不一致，导致打包报错的问题 
-   安装插件 cordova plugin add cordova-android-support-gradle-release --variable ANDROID_SUPPORT_VERSION=25.+
+   安装插件 
+   
+### 编码规范
