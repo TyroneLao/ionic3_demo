@@ -1,0 +1,67 @@
+<!--<ion-header>-->
+<!--<ion-navbar color="primary">-->
+<!--<ion-title>用户登陆</ion-title>-->
+<!--</ion-navbar>-->
+<!--</ion-header>-->
+
+<ion-content no-bounce>
+  <!--<div class="centerImg">-->
+  <!--<img class="headImg" src="./assets/imgs/img_login_bg.png">-->
+  <!--</div>-->
+
+
+  <ion-card class="card-top">
+
+    <ion-card-content>
+
+      <ion-list no-lines>
+        <ion-item>
+          <!--<ion-icon item-start class="iconInput"  name="ios-person-outline"></ion-icon>-->
+          <img item-start class="iconInput" src="./assets/imgs/user.png">
+          <!--<ion-label floating>账号</ion-label>-->
+          <ion-input placeholder="登录名" type="text" value="" [(ngModel)]="userHtml.loginName" name="loginName"
+                     maxlength="64" clearInput="true" clearOnEdit="false"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <img item-start class="iconInput" src="./assets/imgs/lock.png">
+          <!--<ion-icon item-start class="iconInput" name="ios-lock-outline"></ion-icon>-->
+          <!--<ion-label floating>密码</ion-label>-->
+          <ion-input placeholder="密码" type="password" [(ngModel)]="userHtml.htmlPwd" name="htmlPwd" maxlength="16"
+                     clearInput="true" clearOnEdit="false"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div padding>
+        <button ion-button color="primary" (click)="login()" block>登 &nbsp;&nbsp;&nbsp;&nbsp; 录</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+<!--  <ion-card>
+    <ion-list>
+      <button ion-item padding (click)="gotoPage('TestPage')">
+        <ion-icon class="icon-brown" name="ios-list-box-outline" item-start></ion-icon>
+        测试
+        <ion-note item-end>点击查看</ion-note>
+      </button>
+    </ion-list>
+  </ion-card>-->
+
+
+  <!--<div style="margin-top: 50px;">-->
+    <!--<ion-item>-->
+      <!--<ion-label>是否为调试模式</ion-label>-->
+      <!--<ion-toggle [(ngModel)]="selectDebug" (ionChange)="switchDebug()"></ion-toggle>-->
+    <!--</ion-item>-->
+    <!--<ion-item *ngIf="isDebug=='YES'">-->
+      <!--<ion-label color="primary" stacked>后端地址（10.2.153.147:8080）</ion-label>-->
+      <!--<ion-input type="text" [(ngModel)]="debugUrl" placeholder="10.2.153.147:8080"></ion-input>-->
+    <!--</ion-item>-->
+  <!--</div>-->
+  <!--<button ion-item padding (click)="goToPages()">-->
+    <!--<ion-icon class="icon-brown" name="ios-list-box-outline" item-start></ion-icon>-->
+    <!--测试二维码扫描-->
+  <!--</button>-->
+</ion-content>

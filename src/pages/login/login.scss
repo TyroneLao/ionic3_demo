@@ -1,0 +1,41 @@
+page-login {
+  .content-ios {
+    background-color: white !important; //sass 语法
+    background:url(../assets/imgs/img_login_bg.png);
+    -moz-background-size:100% auto; /* 老版本的 Firefox */
+    background-size:100% auto;
+    background-repeat:no-repeat;
+  }
+
+
+  //.centerImg {
+  //  height: 125px;
+  //  text-align: center
+  //}
+  //.headImg {
+  //  background-size: cover;
+  //  margin-top: 35px;
+  //  height: 90px;
+  //  width: auto;
+  //}
+
+
+  .card-top {
+    margin-top: 70%;
+  }
+  .iconInput {
+    width: 22px;
+    font-size: 35px;
+    margin-top: auto !important;
+    margin-bottom: 8px !important;
+  }
+
+  .contTop {
+    background:url(../assets/material/login_bg.png);
+    -moz-background-size:100% 80%; /* 老版本的 Firefox */
+    background-size:100% 80%;
+    background-repeat:no-repeat;
+    height: 60%;
+    width: auto;
+  }
+}

@@ -1,0 +1,20 @@
+page-update {
+  .content-ios{
+    background-color: color($colors,gray);//sass 语法
+  }
+  .card-top{
+    padding-top: 30px;
+  }
+  .latestVersion{
+    margin-top: 20px;
+    color: red;
+  }
+  .currentVersion{
+    margin-top: 20px;
+    color: green;
+  }
+  .col-font{
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

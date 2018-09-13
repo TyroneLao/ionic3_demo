@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>版本更新</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card class="card-top">
+    <ion-row>
+      <ion-col text-center class="col-font">
+        当前版本：V{{app.version}}
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="!needUpdate">
+
+      <ion-col text-center class="currentVersion col-font">
+        当前版本已是新版本
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="needUpdate">
+      <ion-col text-center class="latestVersion col-font">
+        发现新版本：V{{resp.version}}
+      </ion-col>
+
+    </ion-row>
+
+
+    <ion-card-content>
+
+
+      <div *ngIf="needUpdate" padding>
+        <button ion-button color="primary" (click)="download()" block small>马上更新</button>
+      </div>
+      <div *ngIf="!needUpdate" padding>
+        <button ion-button color="primary" (click)="checkUpdate()" block small>检查新版本</button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

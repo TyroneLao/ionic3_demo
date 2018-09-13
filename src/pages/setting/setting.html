@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>更多</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <!--<ion-list>-->
+    <!--<button ion-item (click)="goToPages('UserInfoPage');">个人资料</button>-->
+    <!--<button ion-item (click)="goToPages('EditPasswordPage');">修改密码</button>-->
+  <!--</ion-list>-->
+  <ion-list>
+    <div [ngClass]="{'badgeLine': needUpdate}"  data-badge="">
+      <button ion-item (click)="goToPages('UpdatePage');">检查新版本
+      </button>
+    </div>
+    <button ion-item (click)="goToPages('AboutUsPage');">关于我们</button>
+
+
+
+    <!--<ion-item>-->
+      <!--<ion-label>是否为调试模式</ion-label>-->
+      <!--<ion-toggle [(ngModel)]="selectDebug" (ionChange)="switchDebug()"></ion-toggle>-->
+    <!--</ion-item>-->
+    <!--<ion-item *ngIf="isDebug=='YES'">-->
+      <!--<ion-label color="primary" stacked>后端地址（10.2.153.147:8080）</ion-label>-->
+      <!--<ion-input type="text" [(ngModel)]="debugUrl" placeholder="10.2.153.147:8080"></ion-input>-->
+    <!--</ion-item>-->
+
+
+  </ion-list>
+  <ion-list padding class="action-sheets">
+    <button ion-button block outline color="danger" (click)="presentActionSheet();">退出/注销</button>
+  </ion-list>
+
+</ion-content>

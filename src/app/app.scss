@@ -11,6 +11,166 @@
 // Shared Sass variables, which can be used to adjust Ionic's
 // default Sass variables, belong in "theme/variables.scss".
 //
-// To declare rules for a specific mode, create a child rule
+// To declare rules for a specific mode, style="opacity: .4;"create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.content-ios {
+  background-color: color($colors, gray); //sass 语法
+}
+.background-color-white{
+  background-color:white;
+}
+//只读时使用的样式
+.readonly-style{
+  opacity: .4 !important;
+}
+
+.color-red{
+  color: red;
+}
+
+.loadingBg.loading-ios .loading-wrapper {
+  background: transparent;
+}
+
+.toastText {
+  text-align: center;
+}
+
+.btnText {
+  //margin: 0 auto;
+  //padding: 0;
+  text-align: center;
+  width: 80px
+}
+
+.badgeContent { //有内容徽章
+  position: relative;
+}
+
+.badgeContent[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -88px;
+  left: 18px;
+  font-size: .7em;
+  background-color: red; //ss 语法;
+  color: white;
+  min-width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  //box-shadow: 0 0 1px #333;
+}
+
+.badgeLine { //没有内容徽章
+  position: relative;
+}
+
+.badgeLine[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 15px;
+  left: 115px;
+  font-size: 7em;
+  background-color: red; //ss 语法;
+  color: white;
+  min-width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 50%;
+  //box-shadow: 0 0 1px #333;
+}
+
+.lineNumber {
+  position: relative;
+}
+
+.lineNumber[data-badge]:before {
+  z-index: 9999;
+  content: attr(data-badge);
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  font-size: 1.1em;
+  font-weight:500;
+  //box-shadow: 0 0 1px #333;
+}
+
+//必填项
+.required-field{
+  position: relative;
+}
+.required-field[data-badge]:after {
+  z-index: 9999;
+  color: red;
+  content: attr(data-badge);
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  font-size: 1.1em;
+  font-weight:500;
+  //box-shadow: 0 0 1px #333;
+}
+
+.hasMore {
+  color: color($colors, text-gray);
+  margin: 18px 0 18px 0;
+  text-align: center;
+}
+.boder-color-default{
+  color : #c8c7cc;
+}
+
+
+.navbar-right-button{
+  text-decoration: none;color: white;
+  float: right;
+  margin-right: 8px;
+  padding:3px 5px 3px 5px;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+/**
+  S 选择插件样式修改
+ */
+.picker-ios .picker-button, .picker-ios .picker-button.activated {
+  font-weight: 600 !important;
+}
+
+.ios .picker-toolbar-multi-picker-cancel {
+  font-weight: 600 !important;
+  text-align: start !important;
+  text-align: left !important;
+}
+
+.multi-picker-placeholder {
+  //color: black;
+  padding-top: 2px  !important;
+  margin-right: -25px;
+  text-decoration:none;
+  border-bottom:1px solid #ccc; /* #ccc换成链接的颜色 */
+  display: inline-block;
+  padding-bottom:5px;
+}
+
+.multi-picker-text {
+  color: black;
+  padding-top: 1px  !important;
+  margin-right: -25px;
+  text-decoration:none;
+  border-bottom:1px solid #ccc; /* #ccc换成链接的颜色 */
+  display: inline-block;
+  padding-bottom:5px;
+}
+
+/**
+  E 选择插件样式修改
+ */
+.transparent-body {
+  background: none transparent !important;
+  opacity: 0.1 !important;
+}
