@@ -103,7 +103,6 @@
     <plugin name="cordova-plugin-jcore" spec="^1.1.12" />
     <plugin name="cordova.plugins.diagnostic" spec="^4.0.10" />
     <plugin name="cordova-hot-code-push-plugin" spec="^1.5.3" />
-    <plugin name="cordova-hot-code-push-local-dev-addon" spec="^0.4.2" />
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="6.4.0" />
 </widget>

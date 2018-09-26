@@ -37,7 +37,6 @@
     "@jiguang-ionic/jpush": "^1.0.2",
     "cordova-android": "6.4.0",
     "cordova-android-support-gradle-release": "^1.4.4",
-    "cordova-hot-code-push-local-dev-addon": "^0.4.2",
     "cordova-hot-code-push-plugin": "^1.5.3",
     "cordova-ios": "4.5.5",
     "cordova-plugin-app-version": "^0.1.9",
@@ -91,8 +90,7 @@
       "cordova-plugin-screen-orientation": {},
       "cordova-plugin-jcore": {},
       "cordova.plugins.diagnostic": {},
-      "cordova-hot-code-push-plugin": {},
-      "cordova-hot-code-push-local-dev-addon": {}
+      "cordova-hot-code-push-plugin": {}
     },
     "platforms": [
       "ios",
