@@ -1,0 +1,7 @@
+{
+  "name": "ionic3demo",
+  "ios_identifier": "com.quhelp.ionic3demo",
+  "android_identifier": "com.quhelp.ionic3demo",
+  "update": "now",
+  "content_url": "http://10.2.152.31:80/hcp/www/"
+}

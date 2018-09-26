@@ -24,7 +24,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <chcp>
-        <config-file url="http://localhost/hcp/www/chcp.json" />
+        <config-file url="http://10.2.152.31:80/hcp/www/chcp.json" />
     </chcp>
     <platform name="android">
         <allow-intent href="market:*" />
